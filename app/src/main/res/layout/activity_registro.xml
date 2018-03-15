@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/estilo_degradado"
+    tools:context="com.example.alan.lotus_app2.Login">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo_lotus" />
+
+    <TextView
+        android:id="@+id/txtVisibleCedula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:textColor="#000000"
+        android:background="#06d1f5"
+        android:layout_centerHorizontal="true"
+        android:text="Preciona Aquí si eres Psicólogo"/>
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVisibleCedula"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_transparente"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Nombre de Usuario"
+        android:layout_margin="10dp"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHighlight="#ffffff"
+        android:textColorHint="#000"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/edtCorreoDeRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_transparente"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHighlight="#ffffff"
+        android:textColorHint="#000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edtPasswordDeRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtCorreoDeRegistro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_transparente"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHighlight="#ffffff"
+        android:textColorHint="#000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edtTelefonoDeRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPasswordDeRegistro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_transparente"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHighlight="#ffffff"
+        android:textColorHint="#000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edtCedula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTelefonoDeRegistro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_transparente"
+        android:ems="10"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/ic_action_cedula"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Número de Cédula"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHighlight="#ffffff"
+        android:textColorHint="#000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtCedula"
+        android:layout_marginTop="10dp"
+        android:text="REGISTRARSE"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:ems="15"
+        android:background="@drawable/fondo_redondo_rosa"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegistrar"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:text="¿Ya tienes una cuenta?"/>
+    <TextView
+        android:id="@+id/txtEnviaLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegistrar"
+        android:layout_marginTop="50dp"
+        android:textColor="#0be100"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_centerHorizontal="true"
+        android:text="¡Inicia seción Aquí!"/>
+</RelativeLayout>
