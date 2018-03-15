@@ -4,29 +4,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/estilo_gris" >
 
 
     <EditText
         android:id="@+id/chatEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/chatListView"
+        android:background="@drawable/edittext_redondeado"
         android:ems="10"
-        android:hint="Escribe un mensaje aqui"
+        android:hint="   Escribir mensaje "
         android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/sendChatButton"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/chatEditText"
-        android:onClick="sendChat"
-        android:text="Button" />
+        android:background="@drawable/boton_redondo"
+        android:drawableEnd="@android:drawable/ic_menu_send"
+        android:onClick="sendChat" />
 
     <ListView
         android:id="@+id/chatListView"
@@ -34,5 +37,5 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/sendChatButton"
         android:layout_alignParentStart="true"
-        android:background="@drawable/estilo_degradado" />
+        android:cacheColorHint="@color/colorblack" />
 </RelativeLayout>

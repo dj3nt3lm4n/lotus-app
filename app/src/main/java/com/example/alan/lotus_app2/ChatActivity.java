@@ -15,9 +15,9 @@ public class ChatActivity extends AppCompatActivity {
 
         EditText chatEditText = (EditText) findViewById(R.id.chatEditText);
 
-        ParceObject message = ParceObject("message");
+        //ParceObject message = ParceObject("message");
 
-        message.put("sender", ParceUse.g)
+       // message.put("sender", ParceUse.g)
 
 
 
