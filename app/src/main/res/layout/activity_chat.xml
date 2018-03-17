@@ -28,7 +28,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:background="@drawable/boton_redondo"
-        android:drawableEnd="@android:drawable/ic_menu_send"
+        android:drawableBottom="@android:drawable/ic_menu_send"
         android:onClick="sendChat" />
 
     <ListView

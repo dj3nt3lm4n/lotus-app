@@ -17,6 +17,7 @@
         app:srcCompat="@drawable/logo_lotus" />
 
     <EditText
+
         android:id="@+id/edtCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
