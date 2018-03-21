@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 /**
  * Created by alan on 16/03/18.
  */
-
+//inicializar charedpreferences
 public class Config {
     public static SharedPreferencesUsers sharedPreferencesUsers;
 }

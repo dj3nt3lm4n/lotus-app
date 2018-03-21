@@ -5,5 +5,5 @@ package com.example.alan.lotus_app2.Utils;
  */
 
 public class JSONkeys {
-    public static final String KEY_URL="";
+    public static final String KEY_URL="http://lotus.caffeinelabs.net/api/";
 }

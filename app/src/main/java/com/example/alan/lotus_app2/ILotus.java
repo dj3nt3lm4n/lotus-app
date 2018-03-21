@@ -14,7 +14,7 @@ import retrofit2.http.Query;
 
 public interface ILotus {
     @POST("sign-up")
-    Call<JsonObject> singUp(@Body Registro registroData);
+    Call<JsonObject> singUp(@Body RegistroData registroData);
 
     @POST("re")
     Call<JsonObject> registro(@Query("sex")String sexo,

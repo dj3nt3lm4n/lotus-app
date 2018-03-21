@@ -3,68 +3,90 @@ package com.example.alan.lotus_app2.modelos;
 /**
  * Created by alan on 16/03/18.
  */
-
+//sustituir por los campos de la api
 public class RegistroData {
-    private String nombre;
-    private String correo;
-    private String pass;
-    private String tel;
+    private String sex;
+    private String birthday;
+    private String name;
+    private String email;
+    private String password;
+    private String password_confirmation;
+    /*email: {type: String, unique: true, required: true},
+    nombre: {type: String},
+    password: {type: String},
+    telefono: {type: Number},
 
-    public RegistroData(String nombre, String correo, String pass, String tel) {
-        this.nombre = nombre;
-        this.correo = correo;
-        this.pass = pass;
-        this.tel = tel;
+    "sex": "macho pecho peludo",
+                  "birthday": "1995/02/20",
+                  "name": "roberto medina mercado",
+                  "email": "roberm31@outlook.com",
+                  "password": "roberto111",
+                  "password_confirmation": "roberto111"
+    */
+
+    public RegistroData(String sex, String birthday, String name, String email, String password, String password_confirmation) {
+        this.sex = sex;
+        this.birthday = birthday;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.password_confirmation = password_confirmation;
     }
 
     public RegistroData() {
-        this.nombre = "";
-        this.correo = "";
-        this.pass = "";
-        this.tel = "";
+        this.sex = "";
+        this.birthday = "";
+        this.name = "";
+        this.email = "";
+        this.password = "";
+        this.password_confirmation = "";
     }
 
-
-    public String getNombre() {
-        return nombre;
+    public String getSex() {
+        return sex;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
-    public String getCorreo() {
-        return correo;
+    public String getBirthday() {
+        return birthday;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
-    public String getPass() {
-        return pass;
+    public String getName() {
+        return name;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getTel() {
-        return tel;
+    public String getEmail() {
+        return email;
     }
 
-    public void setTel(String tel) {
-        this.tel = tel;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
+    public String getPassword() {
+        return password;
+    }
 
-    @Override
-    public String toString() {
-        return "RegistroData{" +
-                "nombre='" + nombre + '\'' +
-                ", correo='" + correo + '\'' +
-                ", pass='" + pass + '\'' +
-                ", tel='" + tel + '\'' +
-                '}';
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getPassword_confirmation() {
+        return password_confirmation;
+    }
+
+    public void setPassword_confirmation(String password_confirmation) {
+        this.password_confirmation = password_confirmation;
     }
 }
